@@ -1,2 +1,7 @@
 .bitrise*
 .gows.user.yml
+_tmp
+examplefile1
+examplefile2
+examplefile3
+examplefile4
