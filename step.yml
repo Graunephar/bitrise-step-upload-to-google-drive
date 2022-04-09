@@ -68,8 +68,6 @@ toolkit:
   bash:
     entry_file: step.sh
 
-
-
 inputs:
 - folder_id:
   opts:
@@ -80,8 +78,8 @@ inputs:
     is_expand: true
     is_required: true
 - service_account_file_url:
-    opts:
-      title: "The service account to use when uploading the file(s)"
+  opts:
+      title: "The Service account to use when uploading the file(s)"
       description: |
         A description of how to get the service account
       summary: The destination folder ID
