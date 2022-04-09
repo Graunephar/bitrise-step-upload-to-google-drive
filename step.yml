@@ -79,20 +79,23 @@ inputs:
     is_required: true
 - service_account_file_url:
   opts:
-      title: "The Service account to use when uploading the file(s)"
+      title: "Service Account file url"
       description: |
-        A description of how to get the service account
-      summary: The destination folder ID
+        A Download url containing a valid json key to a service account which has access to the folder.
+
+        The repositories Readme fiel found [here](https://github.com/Graunephar/bitrise-step-upload-to-google-drive) contains a detailed guide on how to setWe  it up
+      summary: The Service account to use when uploading the file(s)
       is_expand: true
       is_required: true
       is_sensitive: true
-
 - files_to_upload_list:
   opts:
     title: "List of files to upload"
     description: |
       The path for one or more files to upload.
-    summary: List of files to upload. Can be one or more files. If more thanm one seperate with \n
+
+      Can be one or more files. If more than one seperate each path with \n
+    summary: List of files to upload.
     is_expand: true
     is_required: true
 

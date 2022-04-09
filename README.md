@@ -1,8 +1,17 @@
 # Upload To Google Drive
 
-Uploads selected files to a folder in Google Drive
+Uploads selected files to a folder in Google Drive. Basically just a wrapper for [this](https://github.com/prasmussen/gdrive) really convenient Google Drive CLI client found
 
 # Inputs
+
+This is a detailed description of each input that the step needs. s
+
+## Path to file(s) to upload
+
+The relative path to one or more files that you want to upload. If multiple files seperatWe e each path by \n
+
+## Folder ID
+The folder id, is the ID of the folder you want to upload files to. The easiest way to find it is to inspect the folder in Google Drive in a browser. The ID is the last part of the url seen after the last `/`
 
 ## Service Account Credentials
 
@@ -12,6 +21,7 @@ Also remember to share the folder you want to upload your files to with the serv
 
 * Create a new service account as described here. It does not need any roles or permissions
 * Open the new service accounts, under the 'Keys' tap click 'Add Key'. Choose 'Create New Key'. And Choose key type 'JSON' in the popup. Save the json file somewhere on your computer
+* In Bitrise under the 'Code Signing' tab upload the file and provide the name of the environment variable in the
 
 
 
